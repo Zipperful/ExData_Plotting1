@@ -12,6 +12,6 @@ par(new=T)
 plot(elecdata$TimeStamp, elecdata$SubMeter2, col="red", type="l", ylab="Energy sub metering", xlab="", ylim=c(0,max(elecdata$SubMeter1)))
 par(new=T)
 plot(elecdata$TimeStamp, elecdata$SubMeter3, col="blue", type="l", ylab="Energy sub metering", xlab="", ylim=c(0,max(elecdata$SubMeter1)))
-legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lty=c(1,1,1), lwd=c(1,1,1))
+legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n", col=c("black", "red", "blue"), lty=c(1,1,1), lwd=c(1,1,1))
 
 dev.copy(png, "plot3.png");dev.off()
